@@ -1,0 +1,54 @@
+﻿@model IEnumerable<web.Models.mon>
+
+@{
+    Layout= "~/Views/Shared/monla.cshtml"   ;
+    ViewBag.Title = "Index";
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tenmon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ghichu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Loai)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tenmon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ghichu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Loai)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

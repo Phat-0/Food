@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="seoModelStoreContainer" CdmEntityContainer="seoEntities">
+    <EntitySetMapping Name="mons">
+      <EntityTypeMapping TypeName="seoModel.mon">
+        <MappingFragment StoreEntitySet="mon">
+          <ScalarProperty Name="TP" ColumnName="TP" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Tenmon" ColumnName="Tenmon" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="Hinh" ColumnName="Hinh" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
